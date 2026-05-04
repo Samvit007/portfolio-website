@@ -1,0 +1,176 @@
+/* =========================
+   RESET & BASE
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+.home {
+    padding: 40px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+.social-links a {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0077b5;
+}
+
+
+/* =========================
+   PROJECT SECTION
+========================= */
+.projects {
+    padding: 40px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD DESIGN */
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px);
+    background: #e0f7fa;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+
+/* =========================
+   CONTACT SECTION (optional styling)
+========================= */
+.contact input {
+    padding: 8px;
+    margin: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+    color: white;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+section {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    .profile-img {
+        width: 80px;
+    }
+
+    .home {
+        padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
